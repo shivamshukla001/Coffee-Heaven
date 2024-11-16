@@ -1,0 +1,384 @@
+/* General Body Styling */
+body {
+     background-color: #f5f5dc; 
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3e2723; /* Coffee Brown */
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d7ccc8; /* Creamy Beige */
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #d7ccc8; /* Creamy Beige */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #ffab91; /* Soft Orange */
+}
+
+/* Cart Dropdown */
+.cart-icon {
+    font-weight: bold;
+    position: relative;
+}
+
+.cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ffffff; /* White background for contrast */
+    color: #3e2723; /* Coffee Brown for text */
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    z-index: 100;
+}
+
+.cart-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.cart-item {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.cart-total {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: right;
+    color: #3e2723;
+}
+
+.checkout-btn {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #ff6f00; /* Warm Amber */
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background-color: #e65100; /* Darker Amber */
+}
+
+/* Show Cart Dropdown on Hover */
+.cart:hover .cart-dropdown {
+    display: block;
+}
+
+/* Order Now Button */
+.btn-order {
+    background-color: #ff6f00; /* Warm Amber */
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-order:hover {
+    background-color: #e65100; /* Darker Amber */
+}
+
+
+/* Banner item */
+/* Banner Section */
+.banner {
+    background-image: url(https://img.freepik.com/free-photo/coffee-beans-dark-background-top-view-coffee-concept-banner_1220-6300.jpg); /* Replace with your banner image */
+    background-size: cover;
+    background-position: center;
+    height: 350px; /* Adjust height as per your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Text color for contrast */
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.banner-content h1 {
+    font-size: 3rem; /* Adjust size for your design */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+
+/* Menu item code */
+/* Menu Section Styling */
+/* Menu Section Styling */
+.menu-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5dc; /* Light background color for menu */
+}
+
+.menu-section h1 {
+    font-size: 36px;
+    color: #3e2723; /* Coffee color for header */
+    margin-bottom: 30px;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.menu-image {
+    width: 40%; /* Image takes 40% of the width */
+    height: 300px; /* Same height for all images */
+    object-fit: cover; /* Ensure image fills space without distortion */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Bestseller Tag */
+.bestseller-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6f00; /* Warm color for bestseller */
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Menu Details Styling */
+/* Menu Section Styling */
+.menu-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5dc; /* Light background color for menu */
+}
+
+.menu-section h1 {
+    font-size: 36px;
+    color: #3e2723; /* Coffee color for header */
+    margin-bottom: 30px;
+}
+
+/* Flex Container for Menu Items */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of items */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Menu Item Styling */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Image and details will fit in this size */
+    margin-bottom: 20px;
+}
+
+/* Menu Image Styling */
+.menu-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+}
+
+.menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills container without distortion */
+    border-radius: 10px;
+}
+
+/* Bestseller Tag */
+.bestseller-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6f00; /* Warm color for bestseller */
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Menu Details Styling */
+.menu-details {
+    text-align: center;
+    margin-top: 10px;
+    color: #3e2723;
+}
+
+.menu-details h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e2723;
+}
+
+.rating {
+    font-size: 18px;
+    color: #ffab91; /* Soft orange for rating */
+}
+
+.flavor {
+    font-size: 14px;
+    color: #6d4c41; /* Subtle brown for flavor description */
+}
+
+.delivery-time {
+    font-size: 14px;
+    color: #8d6e63; /* Muted brown for delivery time */
+}
+
+/* Hover Effect */
+.menu-item:hover .menu-image {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Places */
+/* Popular Places Section for India */
+.popular-places {
+    padding: 40px 20px;
+    color: #fff; /* Text color for visibility */
+    background-color: #3e2723;/* Matching background with the website */
+    text-align: center;
+
+}
+
+.popular-places h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.place {
+    background-color: #f5f5dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px; /* Ensure all boxes have the same height */
+}
+
+.place h3 {
+    font-size: 1.5rem;
+    color: #3e2723;
+    margin-top: 10px;
+}
+
+.place p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Image Styling */
+.place img {
+    width: 100%;
+    height: 180px; /* Fixed height for all images */
+    object-fit: cover; /* Ensure the images fit the box */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #3e2723; /* Coffee theme */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer Container */
+.footer-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/* Footer Logo */
+.footer-logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffab91; /* Light coffee shade */
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #d7ccc8; /* Lighter shade */
+}

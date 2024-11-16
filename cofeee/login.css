@@ -1,0 +1,83 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1F2544;
+    color: #d7ccc8;
+}
+
+.auth-container, .order-history-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #3e2723;
+}
+
+h2 {
+    text-align: center;
+    color: #3e2723;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff6f00;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e65100;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #ff6f00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Order History */
+.order-history-container {
+    max-width: 600px;
+}
+
+.order {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.order:last-child {
+    border-bottom: none;
+}
+
+#logout {
+    margin-top: 20px;
+    width: 100%;
+}
